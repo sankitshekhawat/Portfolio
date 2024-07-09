@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Landing page</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="/public/images/202-2024792_profile-icon-png.png">
+  </head>
+  <body>
+    <header data-aos ="fade-down">
+      <p>Sankit Shekhawat</p>
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <input id="toggle" type="checkbox"onclick=a();>
+        <label for="toggle" ></label>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <p data-aos="zoom-in" class="job">Web Developer</p>
+        <h1 data-aos="fade-up">Hello my name <br> is Sankit Shekhawat </h1>
+        <p class="bio">Short text with details about you, what you do or your professional career. You can add more information on the about page.</p>
+        <div data-aos="fade-left" class="buttons">
+          <button>Project</button>
+          <button onclick="window.location.href = 'https://www.linkedin.com/in/sankit-shekhawat-927087223/';"> 
+          Linkedin</button>
+        </div>
+        <div data-aos="fade-right" class="social">
+          <a href="https://www.instagram.com/sankit__01/" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-github"></a>
+          <a href="https://www.linkedin.com/in/sankit-shekhawat-927087223/"
+           class="fa fa-reddit"></a>
+        </div>
+      </section>
+      <section>
+
+        <div class="blob">
+          <img data-aos="zoom-out" src="/public/images/IMG_20200819_071944_369.jpg" class="img" >
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      
+  AOS.init();
+
+      let toggleBtn = document.getElementById('toggle')
+        
+      toggleBtn.addEventListener('change',()=>{
+       
+        document.body.classList.add('dark')
+      })
+     
+      
+    
+
+    </script>
+  </body>
+</html>
